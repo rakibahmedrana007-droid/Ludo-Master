@@ -1,70 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ludo Best - Profile</title>
-<style>
-:root{--bg:#0d1523;--card:#172235;--line:#243449;--muted:#8994a5;--gold:#ffd22e}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#0d1523;color:#f4f6f9}
-body{display:flex;justify-content:center}.app{width:100%;max-width:430px;min-height:100vh;background:linear-gradient(180deg,#0d1523 0%,#101a2a 100%);padding-bottom:92px}
-.top{height:118px;padding:27px 22px 10px;display:flex;align-items:flex-start;justify-content:space-between}.logo{font-size:17px;line-height:.82;font-weight:900;color:#ffcf28;text-shadow:0 0 8px #e3ae24}.top-right{display:flex;gap:12px;align-items:center}.bell{font-size:24px;position:relative}.badge{position:absolute;right:-5px;top:-6px;background:#f04d48;color:#fff;border-radius:50%;font-size:10px;padding:3px 5px}.coin{background:#fff;color:#151515;border-radius:20px;padding:8px 13px;font-size:18px;font-weight:800}
-.profile{display:flex;gap:15px;align-items:center;padding:13px 22px 15px}.avatar{width:70px;height:70px;flex:none;border-radius:50%;border:2px solid #f1c52a;background:#26374c;display:grid;place-items:center;font-size:37px;box-shadow:0 0 15px #e0b625}.name{font-size:18px;font-weight:700;margin-bottom:6px}.muted{font-size:12.5px;line-height:1.5;color:#7f8a9a}.uid{display:inline-block;margin-top:5px;padding:4px 8px;border:1px solid #394555;border-radius:12px;color:#b1b8c1;font-size:10px}.edit{margin-left:6px;padding:5px 10px;border-radius:13px;border:1px solid #8d7c1d;background:#25291e;color:#ffd22e;font-weight:700}
-.balance{margin:5px 20px 22px;padding:17px;border:1px solid #14415a;border-radius:24px;background:#122033;box-shadow:0 9px 25px #06101d}.balance-title{font-size:10px;letter-spacing:2px;color:#8994a4;font-weight:700}.balance-title:before{content:"";display:inline-block;width:3px;height:13px;background:#1bb8d0;margin-right:8px;vertical-align:-2px;border-radius:2px}.amount{font-size:20px;color:#aab2bd;margin-top:10px}.add{float:right;margin-top:-38px;border:0;border-radius:15px;padding:12px 18px;background:#2ad873;color:white;font-size:16px;font-weight:800;box-shadow:0 0 16px #27c96944}.winning{display:inline-block;margin-top:9px;border:1px solid #595221;border-radius:8px;padding:4px 8px;color:#a9aa9e;font-size:12px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:25px}.stat{height:78px;border:1px solid #46431f;border-radius:16px;text-align:center;padding-top:11px}.stat .icon{font-size:15px;color:#ffd329}.stat b{display:block;font-size:17px;margin:5px 0 2px}.stat small{font-size:9px;color:#7f8997}
-.section{padding:0 20px}.heading{margin:17px 2px 8px;color:#8e98a7;font-size:11px;letter-spacing:2px;font-weight:700}.item{height:61px;margin:8px 0;border:1px solid #202e42;border-radius:16px;background:#172235;display:flex;align-items:center;padding:0 13px;box-shadow:0 2px 8px #0003}.item-icon{width:36px;height:36px;border-radius:11px;background:#28364a;display:grid;place-items:center;margin-right:13px;font-size:18px;color:#f1f4f7}.item-text{font-size:15px;font-weight:600}.arrow{margin-left:auto;color:#8d98a8;font-size:26px}.new{margin-left:auto;margin-right:9px;padding:4px 8px;border-radius:8px;background:#16b9d0;color:white;font-size:9px;font-weight:800}.logout{color:#ff514e;border-color:#5b2930;background:#251a22}.logout .item-icon{background:#41262d;color:#ff514e}.version{text-align:center;color:#667181;font-size:12px;margin:28px 0 8px}
-.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(430px,100%);height:78px;background:#132033ed;border:1px solid #27374b;border-radius:25px 25px 0 0;display:flex;align-items:center;justify-content:space-around;backdrop-filter:blur(12px)}.nav a{width:31%;height:58px;text-decoration:none;color:#8d97a5;text-align:center;font-size:11px;font-weight:700;padding-top:8px}.nav a .nav-icon{font-size:21px;margin-bottom:4px}.nav a.active{color:#fff;border:1px solid #718899;background:#627d8d77;border-radius:27px;box-shadow:0 0 16px #6d829033}
-@media(min-width:600px){.app{box-shadow:0 0 45px #0008}}
-</style>
-</head>
-<body>
-<div class="app">
-  <header class="top">
-    <div class="logo">LUDO<br>BEST</div>
-    <div class="top-right"><div class="bell">🔔<span class="badge">5</span></div><div class="coin">৳ 0</div></div>
-  </header>
-
-  <section class="profile">
-    <div class="avatar">👨🏻</div>
-    <div>
-      <div class="name">Rakib Ahmed</div>
-      <div class="muted">+8801301470686<br>7t5rakibra@gmail.com</div>
-      <span class="uid">👤 UID: 39394 ▣</span><button class="edit">✎ Edit</button>
-    </div>
-  </section>
-
-  <section class="balance">
-    <div class="balance-title">AVAILABLE BALANCE</div>
-    <div class="amount">BDT <strong style="color:#f2f5f8">0</strong></div>
-    <button class="add">＋ ADD</button>
-    <div class="winning">🏆 Winning: 0</div>
-    <div class="stats">
-      <div class="stat"><div class="icon">🎮</div><b>35</b><small>MATCHES</small></div>
-      <div class="stat"><div class="icon">👥</div><b>1</b><small>REFERS</small></div>
-      <div class="stat"><div class="icon">🏆</div><b>1315</b><small>WINNINGS</small></div>
-    </div>
-  </section>
-
-  <main class="section">
-    <div class="show">ACCOUNT</div>
-    <div class="item"><div class="item-icon">▣</div><div class="item-text">My Wallet</div><div class="arrow">›</div></div>
-    <div class="item"><div class="item-icon">↔</div><div class="item-text">All Statements</div><div class="new">NEW</div><div class="arrow">›</div></div>
-
-    <div class="show">GAME</div>
-    <div class="item"><div class="item-icon">▥</div><div class="item-text">Top Players</div><div class="arrow">›</div></div>
-
-    <div class="show">MORE</div>
-    <div class="item"><div class="item-icon">⌯</div><div class="item-text">Share App</div><div class="arrow">›</div></div>
-    <div class="item"><div class="item-icon">ⓘ</div><div class="item-text">Terms &amp; Conditions</div><div class="arrow">›</div></div>
-    <div class="item"><div class="item-icon">&lt;/&gt;</div><div class="item-text">Developer Profile</div><div class="arrow">›</div></div>
-    <div class="item logout"><div class="item-icon">⇥</div><div class="item-text">Logout</div><div class="arrow">›</div></div>
-    <div class="version">Version 1.0.6</div>
-  </main>
-
-  <nav class="nav">
-    <a href="#home"><div class="nav-icon">⌂</div>Home</a>
-    <a href="#refer"><div class="nav-icon">♣</div>Refer</a>
-    <a class="active" href="#profile"><div class="nav-icon">●</div>Profile</a>
-  </nav>
-</div>
-</body>
-</html>
+<!doctype html><html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ludo Master</title><style>
+body{margin:0;font-family:Arial;background:#08783b;color:#fff}header{background:#075b2e;padding:18px;text-align:center}nav{display:flex;gap:6px;padding:10px;background:#064c26;overflow:auto}button{border:0;border-radius:8px;padding:11px;font-weight:bold}nav button{white-space:nowrap}.page{max-width:600px;margin:auto;padding:15px}.card{background:#fff;color:#222;border-radius:14px;padding:18px;margin:12px 0}input{width:100%;padding:12px;margin:7px 0 12px;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}.pay{display:flex;gap:10px}.pay button{flex:1;background:#fff;border:2px solid #ddd}.pay .active{border-color:#08783b;background:#eafff1}.num{font-size:22px;font-weight:bold;margin:10px 0}.mainbtn{width:100%;background:#08783b;color:#fff;font-size:16px}.hidden{display:none}.ok{color:#08783b;font-weight:bold}</style></head><body>
+<header><h2>🥰 লুডু মাস্টার App সাগতম 🥰</h2></header>
+<nav><button onclick="show('home')">Home</button><button onclick="show('matches')">🎮 Matches</button><button onclick="show('deposit')">💰 Deposit</button><button onclick="show('profile')">👤 Profile</button><button onclick="show('admin')">🔐 Admin</button></nav>
+<section id="home" class="page"><div class="card"><h3>Welcome</h3><p>লুডু মাস্টারে স্বাগতম।</p></div></section>
+<section id="matches" class="page hidden"><div class="card"><h3>🎮 Matches</h3><p>Matches এখানে থাকবে।</p></div></section>
+<section id="deposit" class="page hidden"><div class="card"><h3>💰 Deposit</h3><p>Payment method নির্বাচন করুন:</p><div class="pay"><button id="bk" onclick="pay('bkash')">🟣 bKash</button><button id="ng" onclick="pay('nagad')">🟠 Nagad</button></div><div id="info" class="hidden"><p id="label"></p><div id="num" class="num"></div><button onclick="copyNum()">📋 Copy Number</button></div><label>Deposit Amount (৳)</label><input id="amount" type="number" placeholder="যেমন 100"><label>Transaction ID</label><input id="trx" placeholder="Transaction ID লিখুন"><button class="mainbtn" onclick="submitDeposit()">Deposit Submit</button><p id="msg"></p><small>Screenshot লাগবে না।</small></div></section>
+<section id="profile" class="page hidden"><div class="card"><h3>👤 Profile</h3></div></section>
+<section id="admin" class="page hidden"><div class="card"><h3>🔐 Admin Login</h3><input id="key" type="password" placeholder="Admin Login Key"><button class="mainbtn" onclick="login()">Login</button><p id="am"></p></div><div id="panel" class="card hidden"><h3>Deposit Requests</h3><div id="requests"></div></div></section>
+<script src="app.js"></script></body></html>
